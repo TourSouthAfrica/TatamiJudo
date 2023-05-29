@@ -84,11 +84,12 @@ header {
     }
 
     .navbar.active {
-        height: 200px;
+        height: 450px;
     }
 
     .navbar ul {
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: fit-content;
         margin: 80px auto 0 auto;
         margin: 80px auto 0 auto;
