@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatami Judo Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</style>
+</head>
+<body> 
+    <!-- NavBar -->
+    <header>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="">Gallery</a>
+            </li>
+            <li>
+                <a href="./Join.html" class="active">Join a class</a>
+            </li>
+            <li>
+                <a href="./Done.html">Competitions</a>
+            </li>
+            <li>
+                <a href="">Contact Us</a>
+            </li>
+        </ul>
+        </nav>
+    </header>
+    <!-- End of NavBar-->
+    <!--Form-->
+    <div class="main-block">
+        <div class="left-part">
+          <i class="fas fa-graduation-cap"></i>
+          <h1>Register to our courses</h1>
+          <p>W3docs provides free learning materials for programming languages like HTML, CSS, Java Script, PHP etc.</p>
+        </div>
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <div class="title"> 
+            <h2>Register here</h2>
+          </div>
+          <div class="info">
+            <input class="fname" type="text" name="name" placeholder="Parent Full name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" name="name" placeholder="Phone number">
+            <input type="text" name="name" placeholder="Child Full name">
+            <input type="text" name="name" placeholder="Current Grade">
+            <input type="text" name="name" placeholder="Name of school">
+            Child Date of Birth:
+            <input type="Date" name="name" placeholder="Child Date of Birth">
+          </div>
+          <div>
+          <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    <script>
+        hamburger = document.querySelector(".hamburger")
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar")
+            navBar.classList.toggle("active")
+        }
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "kaydentatamijudo@gmail.com",
+                Password : "35Sergio54",
+                To : 'kaydentatamijudo@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "A new Judoka has joined Tatami",
+                Body : "Here is their info"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
+</body>
+</html>
