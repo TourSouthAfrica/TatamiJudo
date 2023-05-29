@@ -4,32 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tatami Judo academy</title>
+    <title>Tatami Judo Academy</title>
     <link rel="stylesheet" href="styles.css">
+</style>
 </head>
-<body>
+<body> 
+    <!-- NavBar -->
     <header>
-    <div class="navbar">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Join a class</a></li>
-            <li><a href="#">Competitions</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li>
+                <a href="" class="active">Home</a>
+            </li>
+            <li>
+                <a href="">Gallery</a>
+            </li>
+            <li>
+                <a href="">Join a class</a>
+            </li>
+            <li>
+                <a href="">Competitions</a>
+            </li>
+            <li>
+                <a href="">Contact Us</a>
+            </li>
         </ul>
-    </div>
-    <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
+        </nav>
     </header>
-</body>
-<script>
-    hamburger = document.querySelector(".hamburger")
+    <!-- End of NavBar-->
+
+    <!--Logo-->
+    <div class="Logo">
+        <img src="Logo.png" alt()>
+    </div>
+
+    <!---->
+
+    <script>
+        hamburger = document.querySelector(".hamburger")
         hamburger.onclick = function() {
-            navBar = document.querySelector(".navbar")
+            navBar = document.querySelector(".nav-bar")
             navBar.classList.toggle("active")
         }
-</script>
+    </script>
+</body>
 </html>
