@@ -22,16 +22,19 @@
                 <a href="./index.html">Home</a>
             </li>
             <li>
-                <a href="">Gallery</a>
+                <a href="./Gallery.html">Gallery</a>
             </li>
             <li>
                 <a href="./Join.html" class="active">Join a class</a>
             </li>
             <li>
-                <a href="./Done.html">Competitions</a>
+                <a href="./Competitions.html">Competitions</a>
             </li>
             <li>
-                <a href="">Contact Us</a>
+                <a href="./Contact.html">Contact Us</a>
+            </li>
+            <li>
+                <a href="./Apparel.html">Apparel</a>
             </li>
         </ul>
         </nav>
@@ -41,22 +44,22 @@
     <div class="main-block">
         <div class="left-part">
           <i class="fas fa-graduation-cap"></i>
-          <h1>Register to our courses</h1>
-          <p>W3docs provides free learning materials for programming languages like HTML, CSS, Java Script, PHP etc.</p>
+          <h1>Register to become a Judoka!</h1>
+          <p>At Tatami, we strive to be the best. We train hard and are very disciplined whilst being humble and helping others, screw you Kazuno</p>
         </div>
         <form onsubmit="sendEmail(); reset(); return false;">
           <div class="title"> 
             <h2>Register here</h2>
           </div>
           <div class="info">
-            <input class="fname" type="text" name="name" placeholder="Parent Full name">
+            <input type="text" id="Pname" placeholder="Parent Full name">
             <input type="email" id="email" placeholder="Email">
-            <input type="text" name="name" placeholder="Phone number">
-            <input type="text" name="name" placeholder="Child Full name">
-            <input type="text" name="name" placeholder="Current Grade">
-            <input type="text" name="name" placeholder="Name of school">
+            <input type="text" id="number" placeholder="Phone number">
+            <input type="text" id="Cname" placeholder="Child Full name">
+            <input type="number" id="grade" placeholder="Current Grade">
+            <input type="text" id="Sname" placeholder="Name of school">
             Child Date of Birth:
-            <input type="Date" name="name" placeholder="Child Date of Birth">
+            <input type="Date" id="Date" placeholder="Child Date of Birth">
           </div>
           <div>
           <button type="submit">Submit</button>
@@ -74,15 +77,21 @@
     <script>
         function sendEmail() {
             Email.send({
-                Host : "smtp.gmail.com",
+                Host : "smtp.elasticemail.com",
                 Username : "kaydentatamijudo@gmail.com",
-                Password : "35Sergio54",
+                Password : "F3E30B27F56014368D7DD238CD1D3959FF2E",
                 To : 'kaydentatamijudo@gmail.com',
                 From : document.getElementById("email").value,
                 Subject : "A new Judoka has joined Tatami",
-                Body : "Here is their info"
+                Body : " Parent Name: " + document.getElementById("Pname").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Phone Number: " + document.getElementById("number").value
+                + "<br> Childs Name: " + document.getElementById("Cname").value
+                + "<br> Grade: " + document.getElementById("grade").value
+                + "<br> Name of School: " + document.getElementById("Sname").value
+                + "<br> Date: " + document.getElementById("Date").value
             }).then(
-            message => alert(message)
+            message => alert("We will get back to you soon!")
             );
         }
     </script>
