@@ -1,0 +1,107 @@
+header {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    position: sticky;
+}
+
+.navbar ul {
+    list-style: none;
+    background: #000000;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.navbar li {
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fefefe;
+    width: 100px;
+    display: block;
+    padding: 15px;
+    font-size: 17px;
+}
+
+.navbar ul li a.active {
+    color: #000000;
+    background: #fefefe;
+}
+
+.navbar a:hover {
+    background: #f34243;
+    transition: 0.4s;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 200px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 100px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 8.2px;
+        padding-left: 300px;
+
+    }
+    
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+
+    .navbar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #000000;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    .navbar.active {
+        height: 200px;
+    }
+
+    .navbar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .navbar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+}
