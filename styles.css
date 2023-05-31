@@ -240,14 +240,14 @@ html, body {
     }
     }
     /*Competitions page*/
-    section {
+    #form_id {
         width: 100%;
         height: 100vh;
         background: url(Judo.jpg); /*come back */
         background-size: cover;
     }
 
-    section .leftBox {
+    #form_id .leftBox {
         width: 50%;
         height: 100%;
         float: left;
@@ -255,29 +255,29 @@ html, body {
         box-sizing: border-box;
     }
 
-    section .leftBox .content {
+    #form_id .leftBox .content {
         color: #fefefe;
         background: rgba(0,0,0,.5);
         padding: 40px;
         transition: .5s;
     }
 
-    section .leftBox .content:hover {
+    #form_id .leftBox .content:hover {
         background: rgba(254, 1, 1, 0.933);
     }
 
-    section .leftBox .content h1 {
+    #form_id .leftBox .content h1 {
         margin: 0;
         padding: 0;
         font-size: 50px;
         text-transform: uppercase;
     }
 
-    section .leftBox .content p {
+    #form_id .leftBox .content p {
         margin: 10px 0 0;
         padding: 0;
     }
-    section .events {
+    #form_id .events {
         position: relative;
         width: 50%;
         height: 100%;
@@ -286,7 +286,7 @@ html, body {
         box-sizing: border-box;
     }
 
-    section .events ul {
+    #form_id .events ul {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -295,7 +295,7 @@ html, body {
         box-sizing: border-box;
     }
 
-    section .events ul li {
+    #form_id .events ul li {
         list-style: none;
         background: #fff;
         box-sizing: border-box;
@@ -303,7 +303,7 @@ html, body {
         margin: 15px 0;
     }
 
-    section .events ul li .time {
+    #form_id .events ul li .time {
         position: relative;
         padding: 20px;
         background: #262626;
@@ -315,11 +315,11 @@ html, body {
         transition: .5s;
     }
 
-    section .events ul li:hover .time {
+    #form_id .events ul li:hover .time {
         background: #ff0000;
     }
 
-    section .events ul li:hover .time h2 { /*in case*/
+    #form_id .events ul li:hover .time h2 { /*in case*/
         position: absolute;
         margin: 0;
         padding: 0;
@@ -331,7 +331,7 @@ html, body {
         line-height: 30px;
     }
 
-    section .events ul li .time h2 {
+    #form_id .events ul li .time h2 {
         position: absolute;
         margin: 0;
         padding: 0;
@@ -343,12 +343,12 @@ html, body {
         line-height: 30px;
     }
 
-    section .events ul li .time h2 span {
+    #form_id .events ul li .time h2 span {
         font-size: 30px;
     }
 
 
-    section .events ul li .details {
+    #form_id .events ul li .details {
         padding: 20px;
         background: #fff;
         box-sizing: border-box;
@@ -357,7 +357,7 @@ html, body {
         float: left;
     }
 
-    section .events ul li .details h3 {
+    #form_id .events ul li .details h3 {
         position: relative;
         margin: 10px 0 0;
         padding: 0;
@@ -365,7 +365,7 @@ html, body {
         color: #000000;
     }
 
-    section .events ul li .details p {
+    #form_id .events ul li .details p {
         position: relative;
         margin: 10px 0 0;
         padding: 0;
@@ -373,7 +373,7 @@ html, body {
         color: #000000;
     }
 
-    section .events ul li .details a {
+    #form_id .events ul li .details a {
         display: block;
         text-decoration: none;
         text-transform: uppercase;
@@ -386,26 +386,26 @@ html, body {
         color: #000000;
     }
 
-    section .events ul li .details a:hover {
+    #form_id .events ul li .details a:hover {
         background: #00ff73;
         color: #fefefe;
         border-color: #00ff73;
     }
 
     @media (max-width: 991px) {
-        section {
+        #form_id {
             height: 100%;
             background-position: center;
         }
 
-        section .leftBox {
+        #form_id .leftBox {
             width: 100%;
             height: auto;
             float: none;
             padding: 20px;
         }
 
-        section .events {
+        #form_id .events {
             width: 100%;
             height: auto;
             background: transparent;
@@ -413,40 +413,40 @@ html, body {
             box-sizing: border-box;
         }
 
-        section .leftBox .content {
+        #form_id .leftBox .content {
             padding: 20px;
         }
 
-        section .leftBox .content h1 {
+        #form_id .leftBox .content h1 {
             font-size: 30px;
         }
 
-        section .events ul {
+        #form_id .events ul {
             position: relative;
             transform: translateY(0px);
             padding: 0 20px 20px;
         }
 
-        section .events ul li {
+        #form_id .events ul li {
             height: auto;
         }
 
-        section .events ul li .time {
+        #form_id .events ul li .time {
             width: 80px;
             height: 80px;
             padding: 0;
         }
 
-        section .events ul li .time h2 {
+        #form_id .events ul li .time h2 {
             font-size: 30px;
             line-height: 24px;
         }
 
-        section .events ul li .time h2 span {
+        #form_id .events ul li .time h2 span {
             font-size: 20px;
         }
 
-        section .events ul li .details {
+        #form_id .events ul li .details {
             width: 100%;
             float: none;
             padding-bottom: 80px;
@@ -454,16 +454,17 @@ html, body {
             background: transparent;
         }
 
-        section .events ul li .details a {
+        #form_id .events ul li .details a {
             padding: 5px 10px;
         }
 
-        section .events ul li:hover .time h2 { /*in case*/
+        #form_id .events ul li:hover .time h2 { /*in case*/
             font-size: 30px;
         }
 
 
     }
+
 
 
 
