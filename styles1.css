@@ -278,7 +278,7 @@ html, body {
     .card .img_container {
         width: 10em;
         height: 10em;
-        background-color: #5311e1;
+        background-color: #000000;
         padding: 0.5em;
         border-radius: 50%;
         margin: 0 auto 3em auto;
@@ -322,7 +322,7 @@ html, body {
     }
 
     .card:hover {
-        background: linear-gradient(#393131, #783232);
+        background: #cb2a2a;
         color: #000000;
     }
 
