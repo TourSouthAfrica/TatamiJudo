@@ -167,12 +167,8 @@ html, body {
     text-align: center;
     }
 
-    .fa-graduation-cap {
-    font-size: 72px;
-    }
-
     form {
-    background: rgb(255, 0, 0); 
+    background: rgba(156, 11, 11, 0.985); 
     }
 
     .title {
@@ -204,11 +200,11 @@ html, body {
         margin-top: 20px;
         border-radius: 5px; 
         border: none;
-        background: #ffffff; 
+        background: #000000; 
         text-decoration: none;
         font-size: 15px;
         font-weight: 400;
-        color: #000000;
+        color: #ffffff;
         }
 
         .btn-item {
@@ -221,11 +217,11 @@ html, body {
     }
 
     button:hover, .btn-item:hover {
-    background: #000000;
+    background: #ffffff;
     }
 
     .btn-item, button:hover {
-        color: #fefefe;
+        color: #000000;
     }
 
     @media (min-width: 568px) {
