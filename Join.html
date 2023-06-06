@@ -48,35 +48,456 @@
     </header>
     <!-- End of NavBar-->
     <!--Form-->
-    <div class="main-block">
-        <div class="left-part">
-          <i class="fas fa-graduation-cap"></i>
-          <h1>Register to become a Judoka!</h1>
-          <p>At Tatami, we strive to be the best. We train hard and are very disciplined whilst being humble and helping others</p>
-        </div>
-        <form action="https://formsubmit.co/kaydentatamijudo@gmail.com" method="POST">
-          <div class="title"> 
-            <h2>Register here</h2>
-          </div>
-          <div class="info">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-            <input type="hidden" name="_subject" value="A new Judoka has joined Tatami!">
-            <input type="text" name="Parent name" placeholder="Parent's Full name">
-            <input type="email" name="email" placeholder="Email">
-            <input type="text" name="number" placeholder="Phone number">
-            <input type="text" name="Childs name" placeholder="Child's Full name">
-            <input type="number" name="grade" placeholder="Current Grade">
-            <input type="text" name="Gender" placeholder="Child's Gender">
-            <input type="text" name="School name" placeholder="Name of school">
-            Child's Date of Birth:
-            <input type="Date" name="Date" placeholder="Child's Date of Birth">
-          </div>
-          <div>
-            <button type="submit">Submit</button>
-          </div>
-        </form>
+    <script src="https://cdn02.jotfor.ms/static/prototype.forms.js?3.3.42509" type="text/javascript"></script>
+    <script src="https://cdn03.jotfor.ms/static/jotform.forms.js?3.3.42509" type="text/javascript"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+    <script src="https://cdn01.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.42509" type="text/javascript"></script>
+    <script defer src="https://cdn02.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.42509" type="text/javascript"></script>
+    <script defer src="https://cdn03.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.42509" type="text/javascript"></script>
+    <script src="https://cdn01.jotfor.ms/js/payments/validategateways.js?v=3.3.42509" type="text/javascript"></script>
+    <script type="text/javascript">	JotForm.newDefaultTheme = false;
+        JotForm.extendsNewTheme = true;
+        JotForm.singleProduct = false;
+        JotForm.newPaymentUIForNewCreatedForms = true;
+        JotForm.newPaymentUI = true;
+    
+       JotForm.setConditions([{"action":[{"id":"action_1686072919666","visibility":"Show","isError":false,"field":"48"},{"id":"action_1686072911373","visibility":"Show","isError":false,"field":"47"},{"id":"action_1686072895436","visibility":"Show","isError":false,"field":"45"}],"id":"1686072958431","index":"0","link":"Any","priority":"0","terms":[{"id":"term_1686072953406","field":"16","operator":"equals","value":"Grade 7","isError":false},{"id":"term_1686072947323","field":"16","operator":"equals","value":"Grade 6","isError":false},{"id":"term_1686072936101","field":"16","operator":"equals","value":"Grade 5","isError":false},{"id":"term_1686072925018","field":"16","operator":"equals","value":"Grade 4","isError":false},{"id":"term_1686072895435","field":"16","operator":"equals","value":"Grade 3","isError":false}],"type":"field"},{"action":[{"id":"action_1686072850955","visibility":"Show","isError":false,"field":"44"}],"id":"1686072892199","index":"1","link":"Any","priority":"1","terms":[{"id":"term_1686072869752","field":"16","operator":"equals","value":"Grade 2","isError":false},{"id":"term_1686072850955","field":"16","operator":"equals","value":"Grade 1","isError":false}],"type":"field"},{"action":[{"id":"action_1686072828782","visibility":"Show","isError":false,"field":"43"}],"id":"1686072844766","index":"2","link":"Any","priority":"2","terms":[{"id":"term_1686072828782","field":"16","operator":"equals","value":"Grade 0","isError":false}],"type":"field"},{"action":[{"id":"action_1686072773693","visibility":"Show","isError":false,"field":"42"}],"id":"1686072824278","index":"3","link":"Any","priority":"3","terms":[{"id":"term_1686072817909","field":"15","operator":"equals","value":"Grade 3","isError":false},{"id":"term_1686072810404","field":"15","operator":"equals","value":"Grade 2","isError":false},{"id":"term_1686072802041","field":"15","operator":"equals","value":"Grade 1","isError":false},{"id":"term_1686072773693","field":"15","operator":"equals","value":"Grade 0","isError":false}],"type":"field"},{"action":[{"id":"action_1686072651653","visibility":"Show","isError":false,"field":"41"}],"id":"1686072679637","index":"4","link":"Any","priority":"4","terms":[{"id":"term_1686072668456","field":"14","operator":"equals","value":"Grade 2","isError":false},{"id":"term_1686072651653","field":"14","operator":"equals","value":"Grade 1","isError":false}],"type":"field"},{"action":[{"id":"action_1686072639109","visibility":"Show","isError":false,"field":"40"}],"id":"1686072650178","index":"5","link":"Any","priority":"5","terms":[{"id":"term_1686072639109","field":"14","operator":"equals","value":"Grade 0","isError":false}],"type":"field"},{"action":[{"id":"action_1686072613786","visibility":"Show","isError":false,"field":"39"}],"id":"1686072636627","index":"6","link":"Any","priority":"6","terms":[{"id":"term_1686072629097","field":"14","operator":"equals","value":"Grade 00","isError":false},{"id":"term_1686072613786","field":"14","operator":"equals","value":"Grade 000","isError":false}],"type":"field"},{"action":[{"id":"action_1686072697140","visibility":"Show","isError":false,"field":"48"},{"id":"action_1686072690011","visibility":"Show","isError":false,"field":"47"},{"id":"action_0_1686072687897","visibility":"Show","isError":false,"field":"38"}],"id":"1686072559592","index":"7","link":"Any","priority":"7","terms":[{"id":"term_0_1686072687897","field":"13","operator":"equals","value":"Grade 7","isError":false},{"id":"term_1_1686072687897","field":"13","operator":"equals","value":"Grade 6","isError":false},{"id":"term_2_1686072687897","field":"13","operator":"equals","value":"Grade 5","isError":false},{"id":"term_3_1686072687897","field":"13","operator":"equals","value":"Grade 4","isError":false},{"id":"term_4_1686072687897","field":"13","operator":"equals","value":"Grade 3","isError":false}],"type":"field"},{"action":[{"id":"action_1686072478613","visibility":"Show","isError":false,"field":"37"}],"id":"1686072502811","index":"8","link":"Any","priority":"8","terms":[{"id":"term_1686072496051","field":"13","operator":"equals","value":"Grade 2","isError":false},{"id":"term_1686072478613","field":"13","operator":"equals","value":"Grade 1","isError":false}],"type":"field"},{"action":[{"id":"action_1686072461524","visibility":"Show","isError":false,"field":"36"}],"id":"1686072474644","index":"9","link":"Any","priority":"9","terms":[{"id":"term_1686072461524","field":"13","operator":"equals","value":"Grade 0","isError":false}],"type":"field"},{"action":[{"id":"action_1686072437335","visibility":"Show","isError":false,"field":"48"},{"id":"action_1686072430332","visibility":"Show","isError":false,"field":"47"},{"id":"action_1686072371545","visibility":"Show","isError":false,"field":"35"}],"id":"1686072457606","index":"10","link":"Any","priority":"10","terms":[{"id":"term_1686072418600","field":"12","operator":"equals","value":"Grade 7","isError":false},{"id":"term_1686072404570","field":"12","operator":"equals","value":"Grade 6","isError":false},{"id":"term_1686072395979","field":"12","operator":"equals","value":"Grade 5","isError":false},{"id":"term_1686072387323","field":"12","operator":"equals","value":"Grade 4","isError":false},{"id":"term_1686072371545","field":"12","operator":"equals","value":"Grade 3","isError":false}],"type":"field"},{"action":[{"id":"action_0_1686072996328","visibility":"Show","isError":false,"field":"34"}],"id":"1686072369245","index":"11","link":"Any","priority":"11","terms":[{"id":"term_0_1686072996328","field":"12","operator":"equals","value":"Grade 2","isError":false},{"id":"term_1_1686072996328","field":"12","operator":"equals","value":"Grade 1","isError":false}],"type":"field"},{"action":[{"id":"action_1686072320190","visibility":"Show","isError":false,"field":"33"}],"id":"1686072334263","index":"12","link":"Any","priority":"12","terms":[{"id":"term_1686072320190","field":"12","operator":"equals","value":"Grade 0","isError":false}],"type":"field"},{"action":[{"id":"action_1686072310559","visibility":"Show","isError":false,"field":"48"},{"id":"action_1686072299304","visibility":"Show","isError":false,"field":"47"},{"id":"action_0_1686072296991","visibility":"Show","isError":false,"field":"32"}],"id":"1686072277968","index":"13","link":"Any","priority":"13","terms":[{"id":"term_0_1686072296991","field":"11","operator":"equals","value":"Grade 7","isError":false},{"id":"term_1_1686072296991","field":"11","operator":"equals","value":"Grade 6","isError":false},{"id":"term_2_1686072296991","field":"11","operator":"equals","value":"Grade 5","isError":false},{"id":"term_3_1686072296991","field":"11","operator":"equals","value":"Grade 4","isError":false},{"id":"term_4_1686072296991","field":"11","operator":"equals","value":"Grade 3","isError":false}],"type":"field"},{"action":[{"id":"action_1686072194875","visibility":"Show","isError":false,"field":"31"}],"id":"1686072217256","index":"14","link":"Any","priority":"14","terms":[{"id":"term_1686072211934","field":"11","operator":"equals","value":"Grade 2","isError":false},{"id":"term_1686072194875","field":"11","operator":"equals","value":"Grade 1","isError":false}],"type":"field"},{"action":[{"id":"action_1686072181181","visibility":"Show","isError":false,"field":"30"}],"id":"1686072192622","index":"15","link":"Any","priority":"15","terms":[{"id":"term_1686072181181","field":"10","operator":"equals","value":"Grade 0","isError":false}],"type":"field"},{"action":[{"id":"action_1686072146182","visibility":"Show","isError":false,"field":"29"}],"id":"1686072178289","index":"16","link":"Any","priority":"16","terms":[{"id":"term_1686072161023","field":"10","operator":"equals","value":"Grade 00 ","isError":false},{"id":"term_1686072146182","field":"10","operator":"equals","value":"Grade 000","isError":false}],"type":"field"},{"action":[{"id":"action_1686072127374","visibility":"Show","isError":false,"field":"48"},{"id":"action_1686072109413","visibility":"Show","isError":false,"field":"47"}],"id":"1686072134785","index":"17","link":"Any","priority":"17","terms":[{"id":"term_1686072109413","field":"9","operator":"equals","value":"Other","isError":false}],"type":"field"},{"action":[{"id":"action_1686072066602","visibility":"Show","isError":false,"field":"28"}],"id":"1686072099443","index":"18","link":"Any","priority":"18","terms":[{"id":"term_1686072091024","field":"9","operator":"equals","value":"Grade 3","isError":false},{"id":"term_1686072080618","field":"9","operator":"equals","value":"Grade 2","isError":false},{"id":"term_1686072066602","field":"9","operator":"equals","value":"Grade 1","isError":false}],"type":"field"},{"action":[{"id":"action_1686072024507","visibility":"Show","isError":false,"field":"27"}],"id":"1686072061424","index":"19","link":"Any","priority":"19","terms":[{"id":"term_1686072052496","field":"9","operator":"equals","value":"Grade 0","isError":false},{"id":"term_1686072024507","field":"9","operator":"equals","value":"Grade 00","isError":false}],"type":"field"},{"action":[{"id":"action_1686069073256","visibility":"Show","isError":false,"field":"16"}],"id":"1686069086659","index":"21","link":"Any","priority":"21","terms":[{"id":"term_1686069073256","field":"8","operator":"equals","value":"Bryanston Primary School","isError":false}],"type":"field"},{"action":[{"id":"action_1686069060155","visibility":"Show","isError":false,"field":"15"}],"id":"1686069071076","index":"22","link":"Any","priority":"22","terms":[{"id":"term_1686069060155","field":"8","operator":"equals","value":"Bryanston Grade 0 and Foundation Phase School","isError":false}],"type":"field"},{"action":[{"id":"action_1686069040833","visibility":"Show","isError":false,"field":"14"}],"id":"1686069054407","index":"23","link":"Any","priority":"23","terms":[{"id":"term_1686069040833","field":"8","operator":"equals","value":"Steyn City","isError":false}],"type":"field"},{"action":[{"id":"action_1686069024231","visibility":"Show","isError":false,"field":"13"}],"id":"1686069037807","index":"24","link":"Any","priority":"24","terms":[{"id":"term_1686069024231","field":"8","operator":"equals","value":"Bryneven Primary School","isError":false}],"type":"field"},{"action":[{"id":"action_1686069011274","visibility":"Show","isError":false,"field":"12"}],"id":"1686069021981","index":"25","link":"Any","priority":"25","terms":[{"id":"term_1686069011274","field":"8","operator":"equals","value":"Dainfern College","isError":false}],"type":"field"},{"action":[{"id":"action_1686068996991","visibility":"Show","isError":false,"field":"11"}],"id":"1686069009283","index":"26","link":"Any","priority":"26","terms":[{"id":"term_1686068996991","field":"8","operator":"equals","value":"Beaulieu Preparatory ","isError":false}],"type":"field"},{"action":[{"id":"action_1686068969379","visibility":"Show","isError":false,"field":"10"}],"id":"1686068994002","index":"27","link":"Any","priority":"27","terms":[{"id":"term_1686068969379","field":"8","operator":"equals","value":"Beaulieu Nursery School","isError":false}],"type":"field"},{"action":[{"id":"action_1686068516558","visibility":"Show","isError":false,"field":"9"}],"id":"1686068533020","index":"28","link":"Any","priority":"28","terms":[{"id":"term_1686068516558","field":"8","operator":"equals","value":"St Davids","isError":false}],"type":"field"}]);	JotForm.clearFieldOnHide="disable";
+        JotForm.submitError="jumpToFirstError";
+    
+        JotForm.init(function(){
+        /*INIT-START*/
+          JotForm.setPhoneMaskingValidator( 'input_5_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023' );
+    
+     JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+     JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+     JotForm.calendarOther = {"today":"Today"};
+     var languageOptions = document.querySelectorAll('#langList li'); 
+     for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+       languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("49", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); }, 0); });
+     } 
+     JotForm.onTranslationsFetch(function() { JotForm.setCalendar("49", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); });
+          JotForm.alterTexts(undefined);
+        /*INIT-END*/
+        });
+    
+       JotForm.prepareCalculationsOnTheFly([null,{"name":"heading","qid":"1","text":"Become a Judoka!","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"description":"","name":"parentName","qid":"3","text":"Parent Name","type":"control_fullname"},{"description":"","name":"email","qid":"4","subLabel":"example@example.com","text":"Email","type":"control_email"},{"description":"","name":"phoneNumber","qid":"5","text":"Phone Number","type":"control_phone"},{"description":"","name":"childName","qid":"6","text":"Child Name","type":"control_fullname"},{"description":"","name":"childGender","qid":"7","subLabel":"","text":"Child Gender","type":"control_dropdown"},{"description":"","name":"schoolName","qid":"8","subLabel":"","text":"School Name","type":"control_dropdown"},{"description":"","name":"grade","qid":"9","subLabel":"","text":"Grade ","type":"control_dropdown"},{"description":"","name":"grade10","qid":"10","subLabel":"","text":"Grade ","type":"control_dropdown"},{"description":"","name":"typeA11","qid":"11","subLabel":"","text":"Grade ","type":"control_dropdown"},{"description":"","name":"typeA12","qid":"12","subLabel":"","text":"Grade ","type":"control_dropdown"},{"description":"","name":"typeA13","qid":"13","subLabel":"","text":"Grade ","type":"control_dropdown"},{"description":"","name":"typeA14","qid":"14","subLabel":"","text":"Grade ","type":"control_dropdown"},{"description":"","name":"typeA15","qid":"15","subLabel":"","text":"Grade ","type":"control_dropdown"},{"description":"","name":"typeA16","qid":"16","subLabel":"","text":"Grade ","type":"control_dropdown"},null,null,null,null,null,null,null,null,null,null,{"description":"","name":"class","qid":"27","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classSt28","qid":"28","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"class29","qid":"29","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classBens30","qid":"30","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"class31","qid":"31","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classBeau32","qid":"32","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"class33","qid":"33","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classDain34","qid":"34","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classDain35","qid":"35","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"class36","qid":"36","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classBryne37","qid":"37","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classBryne38","qid":"38","subLabel":"","text":"Class","type":"control_dropdown"},{"description":"","name":"class39","qid":"39","subLabel":"","text":"Class","type":"control_dropdown"},{"description":"","name":"classSteyn40","qid":"40","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classSteyn41","qid":"41","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"class42","qid":"42","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"class43","qid":"43","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"class44","qid":"44","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classBryans45","qid":"45","subLabel":"","text":"Class","type":"control_dropdown"},null,{"description":"","name":"eveningClasses","qid":"47","text":"Evening classes @ Bryanston Primary School","type":"control_checkbox"},{"description":"","name":"eveningClasses48","qid":"48","text":"Evening classes @ Bryanston Primary School","type":"control_checkbox"},{"description":"","name":"childDate","qid":"49","text":"Child Date of Birth","type":"control_datetime"}]);
+       setTimeout(function() {
+    JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"Become a Judoka!","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"description":"","name":"parentName","qid":"3","text":"Parent Name","type":"control_fullname"},{"description":"","name":"email","qid":"4","subLabel":"example@example.com","text":"Email","type":"control_email"},{"description":"","name":"phoneNumber","qid":"5","text":"Phone Number","type":"control_phone"},{"description":"","name":"childName","qid":"6","text":"Child Name","type":"control_fullname"},{"description":"","name":"childGender","qid":"7","subLabel":"","text":"Child Gender","type":"control_dropdown"},{"description":"","name":"schoolName","qid":"8","subLabel":"","text":"School Name","type":"control_dropdown"},{"description":"","name":"grade","qid":"9","subLabel":"","text":"Grade ","type":"control_dropdown"},{"description":"","name":"grade10","qid":"10","subLabel":"","text":"Grade ","type":"control_dropdown"},{"description":"","name":"typeA11","qid":"11","subLabel":"","text":"Grade ","type":"control_dropdown"},{"description":"","name":"typeA12","qid":"12","subLabel":"","text":"Grade ","type":"control_dropdown"},{"description":"","name":"typeA13","qid":"13","subLabel":"","text":"Grade ","type":"control_dropdown"},{"description":"","name":"typeA14","qid":"14","subLabel":"","text":"Grade ","type":"control_dropdown"},{"description":"","name":"typeA15","qid":"15","subLabel":"","text":"Grade ","type":"control_dropdown"},{"description":"","name":"typeA16","qid":"16","subLabel":"","text":"Grade ","type":"control_dropdown"},null,null,null,null,null,null,null,null,null,null,{"description":"","name":"class","qid":"27","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classSt28","qid":"28","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"class29","qid":"29","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classBens30","qid":"30","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"class31","qid":"31","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classBeau32","qid":"32","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"class33","qid":"33","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classDain34","qid":"34","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classDain35","qid":"35","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"class36","qid":"36","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classBryne37","qid":"37","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classBryne38","qid":"38","subLabel":"","text":"Class","type":"control_dropdown"},{"description":"","name":"class39","qid":"39","subLabel":"","text":"Class","type":"control_dropdown"},{"description":"","name":"classSteyn40","qid":"40","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classSteyn41","qid":"41","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"class42","qid":"42","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"class43","qid":"43","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"class44","qid":"44","subLabel":"","text":"Class ","type":"control_dropdown"},{"description":"","name":"classBryans45","qid":"45","subLabel":"","text":"Class","type":"control_dropdown"},null,{"description":"","name":"eveningClasses","qid":"47","text":"Evening classes @ Bryanston Primary School","type":"control_checkbox"},{"description":"","name":"eveningClasses48","qid":"48","text":"Evening classes @ Bryanston Primary School","type":"control_checkbox"},{"description":"","name":"childDate","qid":"49","text":"Child Date of Birth","type":"control_datetime"}]);}, 20); 
+    </script>
+    <style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+    <link id="custom-font" type="text/css" rel="stylesheet" href="//cdn.jotfor.ms/fonts/?family=Cardo" />
+    <link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/defaultV2.css?v=bf6c957
+    "/>
+    <link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/themes/CSS/548957a3700cc4ae108b4567.css?v=3.3.42509&themeRevisionID=640f4a523234620868361fe3"/>
+    <link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_styles.css?3.3.42509" />
+    <link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_feature.css?3.3.42509" />
+    <style type="text/css" id="form-designer-style">
+        /* Injected CSS Code */
+    /*PREFERENCES STYLE*/
+        .form-all {
+          font-family: Cardo, sans-serif;
+        }
+      
+        .form-label.form-label-auto {
+          
+        display: block;
+        float: none;
+        text-align: left;
+        width: 100%;
+      
+        }
+      
+        .form-line {
+          margin-top: 12px;
+          margin-bottom: 12px;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      
+        .form-all {
+          max-width: 752px;
+          width: 100%;
+        }
+      
+        .form-label.form-label-left,
+        .form-label.form-label-right,
+        .form-label.form-label-left.form-label-auto,
+        .form-label.form-label-right.form-label-auto {
+          width: 230px;
+        }
+      
+        .form-all {
+          font-size: 16px
+        }
+      
+        .supernova .form-all, .form-all {
+          background-color: rgb(253, 253, 248);
+        }
+      
+        .form-all {
+          color: #4a4a4a;
+        }
+        .form-header-group .form-header {
+          color: rgb(82, 82, 80);
+        }
+        .form-header-group .form-subHeader {
+          color: #4a4a4a;
+        }
+        .form-label-top,
+        .form-label-left,
+        .form-label-right,
+        .form-html,
+        .form-checkbox-item label,
+        .form-radio-item label,
+        span.FITB .qb-checkbox-label,
+        span.FITB .qb-radiobox-label,
+        span.FITB .form-radio label,
+        span.FITB .form-checkbox label,
+        [data-blotid][data-type=checkbox] [data-labelid],
+        [data-blotid][data-type=radiobox] [data-labelid],
+        span.FITB-inptCont[data-type=checkbox] label,
+        span.FITB-inptCont[data-type=radiobox] label {
+          color: #4a4a4a;
+        }
+        .form-sub-label {
+          color: #646464;
+        }
+      
+      .supernova {
+        background-color: rgb(224, 224, 216);
+      }
+      .supernova body {
+        background: transparent;
+      }
+      
+        .form-textbox,
+        .form-textarea,
+        .form-dropdown,
+        .form-radio-other-input,
+        .form-checkbox-other-input,
+        .form-captcha input,
+        .form-spinner input {
+          background-color: rgba(255, 255, 255, 0);
+        }
+      
+        .supernova {
+          background-image: none;
+        }
+        #stage {
+          background-image: none;
+        }
+      
+        .form-all {
+          background-image: none;
+        }
+      
+        .form-all {
+          position: relative;
+        }
+        .form-all:before {
+          content: "";
+          background-image: url("https://www.jotform.com/uploads/kaydentatamijudo/form_files/Logo.647ef9305126a3.69277774.png");
+          display: inline-block;
+          height: 140px;
+          position: absolute;
+          background-size: 212px 140px;
+          background-repeat: no-repeat;
+          width: 100%;
+        }
+        .form-all {
+          margin-top: 160px;
+        }
+        .form-all:before {
+          top: -150px;
+          background-position: top center;
+          left: 0;
+        }
+              /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+        /* Injected CSS Code */
+    </style>
+    
+    <form class="jotform-form" action="https://submit.jotform.com/submit/231564895640060" method="post" name="form_231564895640060" id="231564895640060" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="231564895640060" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+      <div role="main" class="form-all">
+        <ul class="form-section page-section">
+          <li id="cid_1" class="form-input-wide" data-type="control_head">
+            <div class="form-header-group  header-large">
+              <div class="header-text httal htvam">
+                <h1 id="header_1" class="form-header" data-component="header">Become a Judoka!</h1>
+              </div>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_fullname" id="id_3" data-compound-hint="John,Doe"><label class="form-label form-label-top form-label-auto" id="label_3" for="first_3"> Parent Name </label>
+            <div id="cid_3" class="form-input-wide" data-layout="full">
+              <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top" data-input-type="first"><input type="text" id="first_3" name="q3_parentName[first]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_3 given-name" size="10" value="" placeholder="John" data-component="first" aria-labelledby="label_3 sublabel_3_first" /><label class="form-sub-label" for="first_3" id="sublabel_3_first" style="min-height:13px" aria-hidden="false">First Name</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="last"><input type="text" id="last_3" name="q3_parentName[last]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_3 family-name" size="15" value="" placeholder="Doe" data-component="last" aria-labelledby="label_3 sublabel_3_last" /><label class="form-sub-label" for="last_3" id="sublabel_3_last" style="min-height:13px" aria-hidden="false">Last Name</label></span></div>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_email" id="id_4"><label class="form-label form-label-top form-label-auto" id="label_4" for="input_4"> Email </label>
+            <div id="cid_4" class="form-input-wide" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_4" name="q4_email" class="form-textbox validate[Email]" data-defaultvalue="" style="width:310px" size="310" value="" data-component="email" aria-labelledby="label_4 sublabel_input_4" /><label class="form-sub-label" for="input_4" id="sublabel_input_4" style="min-height:13px" aria-hidden="false">example@example.com</label></span> </div>
+          </li>
+          <li class="form-line" data-type="control_phone" id="id_5"><label class="form-label form-label-top form-label-auto" id="label_5" for="input_5_full"> Phone Number </label>
+            <div id="cid_5" class="form-input-wide" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="tel" id="input_5_full" name="q5_phoneNumber[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue="" autoComplete="section-input_5 tel-national" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_5 sublabel_5_masked" /><label class="form-sub-label" for="input_5_full" id="sublabel_5_masked" style="min-height:13px" aria-hidden="false">Please enter a valid phone number.</label></span> </div>
+          </li>
+          <li class="form-line" data-type="control_fullname" id="id_6"><label class="form-label form-label-top form-label-auto" id="label_6" for="first_6"> Child Name </label>
+            <div id="cid_6" class="form-input-wide" data-layout="full">
+              <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top" data-input-type="first"><input type="text" id="first_6" name="q6_childName[first]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_6 given-name" size="10" value="" data-component="first" aria-labelledby="label_6 sublabel_6_first" /><label class="form-sub-label" for="first_6" id="sublabel_6_first" style="min-height:13px" aria-hidden="false">First Name</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="last"><input type="text" id="last_6" name="q6_childName[last]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_6 family-name" size="15" value="" data-component="last" aria-labelledby="label_6 sublabel_6_last" /><label class="form-sub-label" for="last_6" id="sublabel_6_last" style="min-height:13px" aria-hidden="false">Last Name</label></span></div>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_dropdown" id="id_7"><label class="form-label form-label-top form-label-auto" id="label_7" for="input_7"> Child Gender </label>
+            <div id="cid_7" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_7" name="q7_childGender" style="width:310px" data-component="dropdown" aria-label="Child Gender">
+                <option value="">Please Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select> </div>
+          </li>
+          <li class="form-line" data-type="control_datetime" id="id_49"><label class="form-label form-label-top form-label-auto" id="label_49" for="lite_mode_49"> Child Date of Birth </label>
+            <div id="cid_49" class="form-input-wide" data-layout="half">
+              <div data-wrapper-react="true">
+                <div style="display:none"><span class="form-sub-label-container" style="vertical-align:top"><input type="tel" class="form-textbox validate[limitDate]" id="month_49" name="q49_childDate[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="off" aria-labelledby="label_49 sublabel_49_month" /><span class="date-separate" aria-hidden="true"> -</span><label class="form-sub-label" for="month_49" id="sublabel_49_month" style="min-height:13px" aria-hidden="false">Month</label></span><span class="form-sub-label-container" style="vertical-align:top"><input type="tel" class="form-textbox validate[limitDate]" id="day_49" name="q49_childDate[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="off" aria-labelledby="label_49 sublabel_49_day" /><span class="date-separate" aria-hidden="true"> -</span><label class="form-sub-label" for="day_49" id="sublabel_49_day" style="min-height:13px" aria-hidden="false">Day</label></span><span class="form-sub-label-container" style="vertical-align:top"><input type="tel" class="form-textbox validate[limitDate]" id="year_49" name="q49_childDate[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" autoComplete="off" aria-labelledby="label_49 sublabel_49_year" /><label class="form-sub-label" for="year_49" id="sublabel_49_year" style="min-height:13px" aria-hidden="false">Year</label></span></div><span class="form-sub-label-container" style="vertical-align:top"><input type="text" class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_49" size="12" data-maxlength="12" maxLength="12" data-age="" value="" data-format="mmddyyyy" data-seperator="-" placeholder="MM-DD-YYYY" autoComplete="off" aria-labelledby="label_49 sublabel_49_litemode" /><img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_49_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v2" /><label class="form-sub-label" for="lite_mode_49" id="sublabel_49_litemode" style="min-height:13px" aria-hidden="false">Date</label></span>
+              </div>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_dropdown" id="id_8"><label class="form-label form-label-top form-label-auto" id="label_8" for="input_8"> School Name </label>
+            <div id="cid_8" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_8" name="q8_schoolName" style="width:310px" data-component="dropdown" aria-label="School Name">
+                <option value="">Please Select</option>
+                <option value="St Davids">St Davids</option>
+                <option value="Beaulieu Nursery School">Beaulieu Nursery School</option>
+                <option value="Beaulieu Preparatory ">Beaulieu Preparatory </option>
+                <option value="Dainfern College">Dainfern College</option>
+                <option value="Bryneven Primary School">Bryneven Primary School</option>
+                <option value="Steyn City">Steyn City</option>
+                <option value="Bryanston Grade 0 and Foundation Phase School">Bryanston Grade 0 and Foundation Phase School</option>
+                <option value="Bryanston Primary School">Bryanston Primary School</option>
+                <option value="None of the Above">None of the Above</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_9"><label class="form-label form-label-top form-label-auto" id="label_9" for="input_9"> Grade </label>
+            <div id="cid_9" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_9" name="q9_grade" style="width:310px" data-component="dropdown" aria-label="Grade ">
+                <option value="">Please Select</option>
+                <option value="Grade 00">Grade 00</option>
+                <option value="Grade 0">Grade 0</option>
+                <option value="Grade 1">Grade 1</option>
+                <option value="Grade 2">Grade 2</option>
+                <option value="Grade 3">Grade 3</option>
+                <option value="Other">Other</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_10"><label class="form-label form-label-top form-label-auto" id="label_10" for="input_10"> Grade </label>
+            <div id="cid_10" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_10" name="q10_grade10" style="width:310px" data-component="dropdown" aria-label="Grade ">
+                <option value="">Please Select</option>
+                <option value="Grade 000">Grade 000</option>
+                <option value="Grade 00 ">Grade 00 </option>
+                <option value="Grade 0">Grade 0</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_11"><label class="form-label form-label-top form-label-auto" id="label_11" for="input_11"> Grade </label>
+            <div id="cid_11" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_11" name="q11_typeA11" style="width:310px" data-component="dropdown" aria-label="Grade ">
+                <option value="">Please Select</option>
+                <option value="Grade 1">Grade 1</option>
+                <option value="Grade 2">Grade 2</option>
+                <option value="Grade 3">Grade 3</option>
+                <option value="Grade 4">Grade 4</option>
+                <option value="Grade 5">Grade 5</option>
+                <option value="Grade 6">Grade 6</option>
+                <option value="Grade 7">Grade 7</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_12"><label class="form-label form-label-top form-label-auto" id="label_12" for="input_12"> Grade </label>
+            <div id="cid_12" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_12" name="q12_typeA12" style="width:310px" data-component="dropdown" aria-label="Grade ">
+                <option value="">Please Select</option>
+                <option value="Grade 0">Grade 0</option>
+                <option value="Grade 1">Grade 1</option>
+                <option value="Grade 2">Grade 2</option>
+                <option value="Grade 3">Grade 3</option>
+                <option value="Grade 4">Grade 4</option>
+                <option value="Grade 5">Grade 5</option>
+                <option value="Grade 6">Grade 6</option>
+                <option value="Grade 7">Grade 7</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_13"><label class="form-label form-label-top form-label-auto" id="label_13" for="input_13"> Grade </label>
+            <div id="cid_13" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_13" name="q13_typeA13" style="width:310px" data-component="dropdown" aria-label="Grade ">
+                <option value="">Please Select</option>
+                <option value="Grade 0">Grade 0</option>
+                <option value="Grade 1">Grade 1</option>
+                <option value="Grade 2">Grade 2</option>
+                <option value="Grade 3">Grade 3</option>
+                <option value="Grade 4">Grade 4</option>
+                <option value="Grade 5">Grade 5</option>
+                <option value="Grade 6">Grade 6</option>
+                <option value="Grade 7">Grade 7</option>
+                <option value=""></option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_14"><label class="form-label form-label-top form-label-auto" id="label_14" for="input_14"> Grade </label>
+            <div id="cid_14" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_14" name="q14_typeA14" style="width:310px" data-component="dropdown" aria-label="Grade ">
+                <option value="">Please Select</option>
+                <option value="Grade 000">Grade 000</option>
+                <option value="Grade 00">Grade 00</option>
+                <option value="Grade 0">Grade 0</option>
+                <option value="Grade 1">Grade 1</option>
+                <option value="Grade 2">Grade 2</option>
+                <option value="Other">Other</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_15"><label class="form-label form-label-top form-label-auto" id="label_15" for="input_15"> Grade </label>
+            <div id="cid_15" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_15" name="q15_typeA15" style="width:310px" data-component="dropdown" aria-label="Grade ">
+                <option value="">Please Select</option>
+                <option value="Grade 0">Grade 0</option>
+                <option value="Grade 1">Grade 1</option>
+                <option value="Grade 2">Grade 2</option>
+                <option value="Grade 3">Grade 3</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_16"><label class="form-label form-label-top form-label-auto" id="label_16" for="input_16"> Grade </label>
+            <div id="cid_16" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_16" name="q16_typeA16" style="width:310px" data-component="dropdown" aria-label="Grade ">
+                <option value="">Please Select</option>
+                <option value="Grade 0">Grade 0</option>
+                <option value="Grade 1">Grade 1</option>
+                <option value="Grade 2">Grade 2</option>
+                <option value="Grade 3">Grade 3</option>
+                <option value="Grade 4">Grade 4</option>
+                <option value="Grade 5">Grade 5</option>
+                <option value="Grade 6">Grade 6</option>
+                <option value="Grade 7">Grade 7</option>
+                <option value=""></option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_27"><label class="form-label form-label-top form-label-auto" id="label_27" for="input_27"> Class </label>
+            <div id="cid_27" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_27" name="q27_class" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Monday @ 12:45 - 13:30">Monday @ 12:45 - 13:30</option>
+                <option value="Tuesday @ 12:45 - 13:30">Tuesday @ 12:45 - 13:30</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_28"><label class="form-label form-label-top form-label-auto" id="label_28" for="input_28"> Class </label>
+            <div id="cid_28" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_28" name="q28_classSt28" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Monday @ 13:30 - 14:30">Monday @ 13:30 - 14:30</option>
+                <option value="Tuesday @ 13:30 - 14:30">Tuesday @ 13:30 - 14:30</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_29"><label class="form-label form-label-top form-label-auto" id="label_29" for="input_29"> Class </label>
+            <div id="cid_29" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_29" name="q29_class29" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Wednesday @ 12:45 - 13:15">Wednesday @ 12:45 - 13:15</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_30"><label class="form-label form-label-top form-label-auto" id="label_30" for="input_30"> Class </label>
+            <div id="cid_30" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_30" name="q30_classBens30" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Wednesday @ 13:15 - 13:45">Wednesday @ 13:15 - 13:45</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_31"><label class="form-label form-label-top form-label-auto" id="label_31" for="input_31"> Class </label>
+            <div id="cid_31" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_31" name="q31_class31" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Wednesday @ 14:00 - 15:00">Wednesday @ 14:00 - 15:00</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_32"><label class="form-label form-label-top form-label-auto" id="label_32" for="input_32"> Class </label>
+            <div id="cid_32" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_32" name="q32_classBeau32" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Wednesday 15:00 - 16:00">Wednesday 15:00 - 16:00</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_33"><label class="form-label form-label-top form-label-auto" id="label_33" for="input_33"> Class </label>
+            <div id="cid_33" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_33" name="q33_class33" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Wednesday @ 13:30 - 14:00">Wednesday @ 13:30 - 14:00</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_34"><label class="form-label form-label-top form-label-auto" id="label_34" for="input_34"> Class </label>
+            <div id="cid_34" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_34" name="q34_classDain34" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Wednesday 14:00 - 14:45">Wednesday 14:00 - 14:45</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_35"><label class="form-label form-label-top form-label-auto" id="label_35" for="input_35"> Class </label>
+            <div id="cid_35" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_35" name="q35_classDain35" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Wednesday  @ 14:45 - 15:30">Wednesday @ 14:45 - 15:30</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_36"><label class="form-label form-label-top form-label-auto" id="label_36" for="input_36"> Class </label>
+            <div id="cid_36" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_36" name="q36_class36" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Thursday@ 13:00 - 13:45">Thursday@ 13:00 - 13:45</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_37"><label class="form-label form-label-top form-label-auto" id="label_37" for="input_37"> Class </label>
+            <div id="cid_37" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_37" name="q37_classBryne37" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Thursday @ 13:45 - 14:45">Thursday @ 13:45 - 14:45</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_38"><label class="form-label form-label-top form-label-auto" id="label_38" for="input_38"> Class </label>
+            <div id="cid_38" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_38" name="q38_classBryne38" style="width:310px" data-component="dropdown" aria-label="Class">
+                <option value="">Please Select</option>
+                <option value="Thursday @ 14:45 - 15:45">Thursday @ 14:45 - 15:45</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_39"><label class="form-label form-label-top form-label-auto" id="label_39" for="input_39"> Class </label>
+            <div id="cid_39" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_39" name="q39_class39" style="width:310px" data-component="dropdown" aria-label="Class">
+                <option value="">Please Select</option>
+                <option value="Thursday @ 12:30 - 13:00">Thursday @ 12:30 - 13:00</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_40"><label class="form-label form-label-top form-label-auto" id="label_40" for="input_40"> Class </label>
+            <div id="cid_40" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_40" name="q40_classSteyn40" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Thursday @ 13:00 - 13:45">Thursday @ 13:00 - 13:45</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_41"><label class="form-label form-label-top form-label-auto" id="label_41" for="input_41"> Class </label>
+            <div id="cid_41" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_41" name="q41_classSteyn41" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Thursday @ 13:45 - 14:45">Thursday @ 13:45 - 14:45</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_42"><label class="form-label form-label-top form-label-auto" id="label_42" for="input_42"> Class </label>
+            <div id="cid_42" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_42" name="q42_class42" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Friday @ 13:15 - 14:00">Friday @ 13:15 - 14:00</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_43"><label class="form-label form-label-top form-label-auto" id="label_43" for="input_43"> Class </label>
+            <div id="cid_43" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_43" name="q43_class43" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Friday @ 13:00 -13:45">Friday @ 13:00 -13:45</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_44"><label class="form-label form-label-top form-label-auto" id="label_44" for="input_44"> Class </label>
+            <div id="cid_44" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_44" name="q44_class44" style="width:310px" data-component="dropdown" aria-label="Class ">
+                <option value="">Please Select</option>
+                <option value="Friday @ 13:45 - 14:45">Friday @ 13:45 - 14:45</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_45"><label class="form-label form-label-top form-label-auto" id="label_45" for="input_45"> Class </label>
+            <div id="cid_45" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_45" name="q45_classBryans45" style="width:310px" data-component="dropdown" aria-label="Class">
+                <option value="">Please Select</option>
+                <option value="Friday @ 14:45 - 15:45">Friday @ 14:45 - 15:45</option>
+              </select> </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_checkbox" id="id_47"><label class="form-label form-label-top form-label-auto" id="label_47" for="input_47"> Evening classes @ Bryanston Primary School </label>
+            <div id="cid_47" class="form-input-wide" data-layout="full">
+              <div class="form-single-column" role="group" aria-labelledby="label_47" data-component="checkbox"><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input type="checkbox" aria-describedby="label_47" class="form-checkbox" id="input_47_0" name="q47_eveningClasses[]" value="Monday @ 17:00 - 18:00 (6-11 years old)" /><label id="label_input_47_0" for="input_47_0">Monday @ 17:00 - 18:00 (6-11 years old)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input type="checkbox" aria-describedby="label_47" class="form-checkbox" id="input_47_1" name="q47_eveningClasses[]" value="Wednesday @ 17:00 - 18:00 (6-11 years old)" /><label id="label_input_47_1" for="input_47_1">Wednesday @ 17:00 - 18:00 (6-11 years old)</label></span></div>
+            </div>
+          </li>
+          <li class="form-line form-field-hidden" style="display:none;" data-type="control_checkbox" id="id_48"><label class="form-label form-label-top form-label-auto" id="label_48" for="input_48"> Evening classes @ Bryanston Primary School </label>
+            <div id="cid_48" class="form-input-wide" data-layout="full">
+              <div class="form-single-column" role="group" aria-labelledby="label_48" data-component="checkbox"><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input type="checkbox" aria-describedby="label_48" class="form-checkbox" id="input_48_0" name="q48_eveningClasses48[]" value="Monday @ 18:00 - 19:30 (12 years+)" /><label id="label_input_48_0" for="input_48_0">Monday @ 18:00 - 19:30 (12 years+)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input type="checkbox" aria-describedby="label_48" class="form-checkbox" id="input_48_1" name="q48_eveningClasses48[]" value="Wednesday @ 18:00 - 19:30 (12 years+)" /><label id="label_input_48_1" for="input_48_1">Wednesday @ 18:00 - 19:30 (12 years+)</label></span></div>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_button" id="id_2">
+            <div id="cid_2" class="form-input-wide" data-layout="full">
+              <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_2" type="submit" class="form-submit-button form-submit-button-image-20 submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Submit</button></div>
+            </div>
+          </li>
+          <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+        </ul>
       </div>
+    </form><script type="text/javascript">JotForm.ownerView=true;</script><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.42509"></script>
+    <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.42509"></script>
 
 <!--Javascript-->
 
